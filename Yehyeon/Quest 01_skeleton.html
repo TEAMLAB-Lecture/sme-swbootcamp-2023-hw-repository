@@ -97,7 +97,7 @@
     			background-position: -212px -76px;
 			}
 			#main {
-				height: 2000px;
+				height: 1000px;
 			}
 			.blind {
 				position: absolute;
@@ -135,9 +135,9 @@
 					border-width: thin;
 			}
 			#microphone {
-				position: absolute;
-				top: 203px;
-    			right: 362px;
+				position: relative;
+				top: -47px;
+				right: -191px;
 				margin: none;
 				padding: 5px;
 				display: inline-block;
@@ -155,9 +155,9 @@
 			}
 
 			#imgsearch {
-				position: absolute;
-				top: 203px;
-    			right: 325px;
+				position: relative;
+				top: -47px;
+				right: -177px;
 				margin: none;
 				padding: 5px;
 				display: inline-block;
@@ -175,9 +175,9 @@
 			}
 
 			#location {
-				position: absolute;
-				top: 203px;
-    			right: 286px;
+				position: relative;
+				top: -47px;
+				right: -168px;
 				margin: none;
 				padding: 5px;
 				display: inline-block;
@@ -231,7 +231,8 @@
 					display: flex;
 					list-style-type: none;
 					justify-content: center;
-					font-size: 12px;
+					font-size: 11px;
+					padding-inline-start: 0;
 				}
 				#nav a {
 					text-decoration: none;
@@ -246,29 +247,47 @@
 				#nav a div::after {
 					content: '';
 					display: inline-block;
-					background-image: url(https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512720230Vr2gk.png);
 					background-size: 41px 43px;
-					background-position: -6px -1px;
 					background-repeat: no-repeat;
-					width: 82px;
+					background-position: -6px -1px;
+					margin-left: 0;
+					width: 30px;
 					height: 44px;
 				}
 				#nav a:visited {
-					color: black;
+					color: #757575;
 				}
 				#nav li {
 					width: 60px;
     				margin-left: 4px;
+					text-align: center;
 				}
-				#nav li:nth-of-type(1) {
-					margin-left: 0;
+				#nav li:nth-of-type(1) a div::after {
+					background-image: url(https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512720230Vr2gk.png);
 				}
-				#nav li:nth-of-type(1) {
-
+				#nav li:nth-of-type(2) a div::after {
+					background-image: url(	https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_16835128325991gQ16.png);
 				}
-				#nav li:nth-of-type(1) {
-
+				#nav li:nth-of-type(3) a div::after {
+					background-image: url(https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512901998JXieG.png);
 				}
+				#nav li:nth-of-type(4) a div::after {
+					background-image: url(https://s.pstatic.net/static/www/mobile/edit/20230508_0/upload_1683512791912c66Bt.png);
+					background-position: -6px -1px;
+				}
+				#nav li:nth-of-type(5) a div::after {
+					background-image: url(	https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683614331473O5jI4.png);
+				}
+				#nav li:nth-of-type(6) a div::after {
+					background-image: url(	https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_1683615368135Oq7ZA.png);
+					}
+				#nav li:nth-of-type(7) a div::after {
+					background-image: url(https://s.pstatic.net/static/www/mobile/edit/20230509_0/upload_16836153967537rYTc.png);
+				}
+				#nav li:nth-of-type(8) a div::after {
+					background-image: url(https://s.pstatic.net/static/www/mobile/edit/2021/0427/upload_1619497854375Q53rw.png);
+				}
+				
 			</style>
 			<div id="nav">
 				<ul>
@@ -322,9 +341,105 @@
 					</li>
 				</ul>
 			</div>
-			<div id="main"></div>
-				
+			<div id="main">
+				<div class="box simple_weather" style="margin: 75px 0px 0px 0px">
+					<div class="weather_img"><img class="moon" src="https://s.pstatic.net/static/www/m-new/uit/img/sp_weather_animation_05cf64fb.png" alt="moon"></div>
+					<div class="temp">
+					<span class="text1"><strong>10° 맑음</strong></span><br>
+					</div>
+					<div class="temp_than_yesterday">
+					<span class="text2">어제보다 2° 높아요</span>
+					</div>
+				</div>
+				<div class="box temp_box">
+					날씨 박스, 자세한 날씨
+				</div>
+				<div class="box corona_box">
+					코로나 19 박스
+				</div>
+				<div class="box event_box">
+					대한민국 임시정부 수립일
+				</div>
+				<div class="box naver_app">
+					네이버 앱
+				</div>
+				<div class="box pop_pan">
+					인기 주제 판
+				</div>
+				<div class="box announce_naver">
+					네이버 공지사항
+				</div>
+			</div>
 		</div>
+		<style>
+			.box {
+				position: relative;
+				right: -81px;
+				width: 500px;
+				padding: 15px;
+				background-color: rgb(255, 255, 255);
+				margin-bottom: 10px;
+				}
+			#main {
+				background: linear-gradient(rgb(255, 255, 255), rgb(224, 237, 250), rgb(177, 209, 250));
+			}
+			.moon {
+				position: absolute;
+				top: -100px;
+    			left: 5px;		
+				width: 300px;
+				height: 300px;
+			}
+			.weather_img {
+				position: relative;
+				width: 33px; 
+				height: 33px;
+				overflow: hidden;
+			}
+			.text1 {
+				position: absolute;
+				left: 61px;
+				top: 15px;
+			}
+			.text2 {
+				position: absolute;
+				top: 37px;
+				left: 61px;
+				font-size: 12px;
+			}
+			.footer {
+				margin-top: -113px;
+    			text-align: center;
+			}
+
+			.footer_row {
+				margin: 5px;
+			}
+
+			.footer_logo {
+				margin: 10px 0px 30px 0px;
+			}
+
+			.footer_link {
+				text-decoration: none;
+			}
+		</style>
+		
 	</div>
+	<footer class="footer text3">
+		<div class="footer_row">
+		  <a class="footer_link" href="https://nid.naver.com/nidlogin.login">로그인</a>
+		  <a class="footer_link" href="https://m.naver.com/services.html">전체서비스</a>
+		  <a class="footer_link" href="https://www.naver.com/?mobile">PC버전</a>
+		</div>
+		<div class="footer_row">
+		  <a class="footer_link" href="https://policy.naver.com/policy-mobile/term.html?type=1?type=1">이용약관</a>
+		  <a class="footer_link" href="https://policy.naver.com/policy-mobile/privacy.html"><b>개인정보처리방침</b></a>
+		  <a class="footer_link" href="https://m.help.naver.com/support/index.help">고객센터</a>
+		</div>
+		<div class="footer_logo">
+		  <a href="https://www.naver.com/"><img src="./pics/graynaver.PNG" alt="naver" width="60px"></a>
+		</div>
+	  </footer>
 </body>
 </html>
