@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+}
