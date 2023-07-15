@@ -5,8 +5,13 @@ h1 {
 input[type="text"] {
     width: 300px;
     padding: 10px;
+    position: relative;
+    top: 80px;
+    width: 500px;
 }
 
 button {
     padding: 10px;
 }
+
+    
