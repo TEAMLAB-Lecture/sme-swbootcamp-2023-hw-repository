@@ -6,28 +6,28 @@ const clearAllButton = document.getElementById('clearAll');
 const selectDeleteButton = document.getElementById('selectDelete');
 const deleteAllButton = document.getElementById('deleteAll');
 
-function AddItem() {
+function addList() {
     let text = inputText.value;
     if (text.trim() === '') {
-        alert("할 일을 입력해주세요!");
+        alert('할 일을 입력해주세요!');
     }
     else {
-        addItem(text);
+        addToList(text);
         inputText.value = '';
     }
 }
 
 inputText.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-        AddItem();
+        addList();
     }
 });
 
 addButton.addEventListener('click', function() {
-    AddItem();
+    addList();
 });
 
-function addItem(title) {
+function addToList(title) {
     let newItem = document.createElement('li');
 // 체크박스 생성
     const checkbox = document.createElement('input');
@@ -48,7 +48,7 @@ function addItem(title) {
     const editButton = document.createElement('button');
     editButton.innerText = '수정';
     editButton.addEventListener('click', function() {
-        const newTitle = prompt('새로운 제목을 입력하세요', span.innerText);
+        const newTitle = prompt('다른 할일을 적어주세요!', span.innerText);
         if (newTitle && newTitle.trim() !== '') {
             span.innerText = newTitle;
         }
