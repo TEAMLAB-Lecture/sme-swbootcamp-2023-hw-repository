@@ -59,7 +59,16 @@ function removeSelected() {
 
 function removeAll() {
     const checkboxes = document.getElementsByName('checkbox');
-    for (let i = 0; i < checkboxes.length; i++) {
-        checkboxes[i].parentElement.parentElement.remove();
-    }
+    const checkboxesArray = Array.from(checkboxes);
+
+    checkboxesArray.forEach(function (checkbox) {
+        checkbox.parentElement.parentElement.remove();
+    });
+    
+    // checkboxes.parentElement.parentElement.remove();
+    // let i = 0;
+    // while (checkboxes.length > i) {
+    //     checkboxes[i].parentElement.parentElement.remove();
+    //     i++
+    //   }
 }
