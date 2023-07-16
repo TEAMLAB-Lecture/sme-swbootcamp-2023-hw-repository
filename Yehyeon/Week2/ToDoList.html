@@ -20,13 +20,14 @@
             <button onclick="addTask()">Add task</button>
             </section>
             <div id="taskList">
+                <!-- JS로 task 추가 -->
             </div>
         </div>
         <div class="funtional_btns">
             <button id="check_all" onclick="selectAllTasks()">전체 선택</button>
-            <button id="uncheck_all">전체 해제</button>
-            <button id="remov_select">선택 삭제</button>
-            <button id="remov_all">전체 삭제</button>
+            <button id="uncheck_all" onclick="unselectAllTasks()">전체 해제</button>
+            <button id="remov_select" onclick="removeSelected()">선택 삭제</button>
+            <button id="remov_all" onclick="removeAll()">전체 삭제</button>
         </div>
 
     </section>

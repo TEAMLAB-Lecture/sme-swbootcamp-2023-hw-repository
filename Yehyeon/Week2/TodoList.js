@@ -40,3 +40,26 @@ function selectAllTasks() {
       checkboxes[i].checked = true;
     }
 }
+
+function unselectAllTasks() {
+    const checkboxes = document.getElementsByName('checkbox');
+    for (let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].checked = false;
+    }
+}
+
+function removeSelected() {
+    const checkboxes = document.getElementsByName('checkbox');
+    for (let i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            checkboxes[i].parentElement.parentElement.remove();
+        }
+      }
+}
+
+function removeAll() {
+    const checkboxes = document.getElementsByName('checkbox');
+    for (let i = 0; i < checkboxes.length; i++) {
+        checkboxes[i].parentElement.parentElement.remove();
+    }
+}
