@@ -1,0 +1,97 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(white 30%, rgb(118, 223, 244) 70%);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    margin: 4rem auto;
+    font-size: 5rem;
+}
+
+#wrapper {
+    max-width: 80%;
+    margin: auto;
+}
+
+#add {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    height: 20px;
+}
+
+#add input[type="text"],
+#add button {
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 0;
+}
+
+#add input[type="text"] {
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+}
+
+#add button {
+    background-color: aqua;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+#add button:active {
+    background-color: deepskyblue;
+    color: black;
+}
+
+#list {
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: #fff;
+    max-height: 500px;
+    height: 400px;
+}
+
+#buttons {
+    margin: 5px 0;
+    display: flex;
+    justify-content: end;
+}
+
+#buttons button {
+    color: white;
+    margin: 0 3px;
+    padding: 5px;
+    background-color:rgb(11, 100, 144);
+    border : 1px solid black;
+}
+
+#buttons button:active {
+    background-color: deepskyblue;
+    color: black;
+}
+
+li {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+li input {
+    margin-right: 10px;
+}
+
+li span {
+    margin-right: auto;
+}
