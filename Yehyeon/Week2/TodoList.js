@@ -35,7 +35,7 @@ taskInput.addEventListener("keydown", function(event) {
 });
 
 function selectAllTasks() {
-    const checkboxes = document.getElementsByName('task');
+    const checkboxes = document.getElementsByName('checkbox');
     for (let i = 0; i < checkboxes.length; i++) {
       checkboxes[i].checked = true;
     }
