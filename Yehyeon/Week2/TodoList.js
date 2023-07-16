@@ -72,3 +72,17 @@ function removeAll() {
     //     i++
     //   }
 }
+
+
+var url = 'https://github.com/AnYeHyeon/img/blob/main/KakaoTalk_20230705_150105913.jpg?raw=true';
+ 
+var image = new Image();
+image.src = url;
+document.getElementById('img_container').appendChild(image);
+image.setAttribute("id", "sudal")
+
+function gotomyblog() {
+    document.querySelector('button').addEventListener('click', e=>{
+    	window.open('https://busansudal.tistory.com/');
+    });
+}

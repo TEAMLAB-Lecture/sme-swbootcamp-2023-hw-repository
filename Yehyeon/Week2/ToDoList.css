@@ -58,3 +58,19 @@ button {
 #Input_task {
     margin-bottom: 20px;
 }
+
+#img_container {
+    position: relative;
+    width: 64px;
+    height : 64px;
+    left: 500px;
+    top: 140px;
+    border-radius: 70%;
+}
+
+#sudal{
+    width : 60px;
+    height : auto;
+    border-radius: 70%;
+    overflow: hidden;
+}
