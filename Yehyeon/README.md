@@ -11,7 +11,5 @@
 
 
 ### Week 2 : JavaScript+Jquery, DB SQL + DB Modelling
-<<<<<<< HEAD
-- [Quest 03. 자바스크립트와 DOM](https://github.com/AnYeHyeon/TIL/blob/main/Quest%2003.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80%20DOM.md)
-=======
+
 - [Quest 03. 자바스크립트와 DOM](https://github.com/AnYeHyeon/TIL/blob/main/Quest%2003.%20%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EC%99%80%20DOM.md)
