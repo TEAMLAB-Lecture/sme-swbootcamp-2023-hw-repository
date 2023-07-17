@@ -1,0 +1,261 @@
+#wrap{
+    text-align: center;
+    
+}
+html{
+    background: linear-gradient(white 25%,#E9F1F7);
+}
+
+.section{
+    width: 670px;
+    display: inline-block;
+    background-color:white;
+    
+}
+
+#search_input{
+    width: 500px;
+    height: 15px;
+    padding: 22px 2px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    outline: none;
+    position: relative;
+    right: 20px;
+}
+
+
+
+
+.header3, .header2{
+    float: right;
+    padding: 1px;
+    }
+    
+.header4{
+    float: right;
+    padding:12px;
+}
+
+.search_bar {
+    padding: 8px 8px;
+    border: 2px solid #0fdf8a;
+    border-radius: 6px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+}
+input::placeholder{
+    font-size: 20px;
+    color: lightgray;
+}
+
+.navigation td {
+    padding: 0;
+}
+
+.photo{
+    position: relative;
+    top: 7px;
+    left: 20px;
+}
+table{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.covid{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    
+}
+
+.covid_fact{
+    font-weight: 900;
+    position: relative;
+    left:50px;
+    top:5px;
+}
+
+.covid_fact_2{
+    font-weight:light;
+    color: gray;
+    position: relative;
+    left:30px;
+    bottom: 3px;
+    
+}
+.covid_text_bold{
+    font-weight: 900;
+    position: relative;
+    text-align: left;
+    
+}
+.covid_subtext{
+    font-weight:light;
+    color: gray;
+    position: relative;
+    width: 100;
+    text-align: left;
+}
+.korea{
+
+    text-align: center;
+}
+
+.navigation{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+.nav_icon{
+
+    border-radius: 22px;
+    margin: 30px 30px 10px 30px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+
+}
+
+.nav_text{
+    color: lightgray;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: white;
+    
+}
+.weather_text_bold{
+    
+        font-weight: 900;
+        font-size: large;
+        text-align: center;
+        left: 15px;
+        background-color: white;
+        
+}
+
+.weather_back{
+    background-color: white;
+    text-align: center;
+    }
+.weather_0{
+    
+    background-color: white;
+    
+}
+    .weather_1{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(96, 96, 96);
+    position: relative;
+    right: 65px;
+    }
+    
+.bar{
+    background-color: white;
+    width: 100%;
+    height: 117px;
+    text-align: left;
+
+    }
+.bar_text{
+    font-weight: 700;
+    font-family: Verdana, sans-serif;
+    
+}
+
+.bar_text2{
+    font-weight: 50;
+    font-family:Verdana, sans-serif;
+    
+}
+.weather_now1{
+    padding: 0px 100px 0px 0px;
+}
+.weather_now2{
+    padding: 0px 0px 0px 50px;
+}
+
+.app{
+    text-align: center;
+    width: 100%;
+
+}
+
+
+.webtoon{
+    width: 100%;
+
+}
+.popular{
+    text-align: center;
+    width: 100%;
+}
+
+.popular_list{
+    height: 150px;
+}
+.popular_list2{
+    padding-top: 30px;
+}
+
+.notice{
+    text-align: center;
+    background-color: white;
+    width: 630px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+}
+.notice_pic{
+    position: relative;
+    right:120px;
+    top: 2px;
+}
+.notice_text{
+    
+    right: 122px;
+    bottom: 50px;
+    font-weight: 600;
+    color: gray;
+    
+}
+.notice_direction{
+
+    position: relative;
+    left: 110px;
+    bottom: 14px;
+}
+
+
+.line{
+    color: lightgray;
+}
+
+
+footer{
+    text-align: center;
+   
+}
+.footer_1{
+    padding: 20px 0px 0px 0px;
+    
+}
+.footer_2{
+    padding: 8px;
+}
+.footer_text{
+    font-size: 14px;
+    text-decoration: none;
+} 
