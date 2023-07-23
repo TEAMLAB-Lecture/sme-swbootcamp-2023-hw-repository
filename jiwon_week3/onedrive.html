@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>원드라이브</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+
+        .navbar .form-control,
+        .navbar .btn,
+        .navbar .navbar-brand,
+        .navbar .fas {
+            font-size: 18px;
+            color: white;
+        }
+
+        .navbar .fas {
+            margin: 5px;
+        }
+
+        .navbar .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .navbar .form-control {
+            width: 100%;
+            color: black;
+            font-size: 13px;
+        }
+
+        .navbar .l_icon {
+            margin-left: auto;
+        }
+
+        .navbar .fas:first-child {
+            margin-left: 10px;
+        }
+
+        .navbar .fas:last-child {
+            margin-right: 5px;
+        }
+
+        .navbar-brand::before {
+            font-family: "Font Awesome 5 Free";
+            margin-right: 5px;
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 5fr; 
+            gap: 0;
+            height: 100vh; 
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        .left_list {
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+            padding: 15px;
+            background-color: #f0f0f0; 
+            width: calc(100vw / 6); 
+            overflow-y: auto; 
+        }
+
+        .left_list a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .l_list {
+            font-size: 15px;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.2s; 
+            padding: 10px;
+            background-color: #f0f0f0; 
+        }
+
+        .l_list:hover {
+            background-color: #c0c0c0; 
+        }
+
+        .yangjiwon {
+            font-size: 15px;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: default;
+        }
+
+        .nav-icon {
+            margin-right: 10px;
+        }
+
+        .content {
+            height: 100%; 
+            background-color: #f0f0f0; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: flex-end; 
+            align-items: flex-start;
+            padding: 15px;
+            background-color: whitesmoke;
+            width: calc(5 * 100vw / 6);
+            overflow-y: auto;
+            height: 65px;
+        }
+
+        .blue_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 155px;
+            height: 35px;
+            background-color: #007bff; 
+            color: white; 
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            margin : 5px;
+        }
+        .blue_box i {
+            margin-right: 8px;
+            margin-left: 8px; 
+        }
+        .grey_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 130px;
+            height: 35px;
+            background-color: whitesmoke; 
+            color: black; 
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            margin : 5px;
+            position: relative;
+        }
+        .grey_box i {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute; 
+            top: 100%;
+            left: 0;
+            width: 100%; 
+            background-color: #ffffff; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            flex-direction: column;
+            z-index: 1;
+        }
+        .dropdown-content a {
+        display: block;
+        padding: 8px 16px;
+        color: black;
+        text-decoration: none;
+        transition: background-color 0.2s;
+        font-weight: normal;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f0f0f0; 
+        }
+        .alignment_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 110px;
+            height: 35px;
+            background-color: whitesmoke; 
+            color: black; 
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            margin : 5px;
+            position: relative;
+        }
+        .lists {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 35px;
+            background-color: whitesmoke; 
+            color: black; 
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            margin : 5px;
+            position: relative;
+        }
+        .information {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 35px;
+            background-color: whitesmoke; 
+            color: black; 
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 10px;
+            margin : 5px;
+            position: relative;
+        }
+        .information:hover {
+            background-color: #f0f0f0; 
+        }
+        .r_boxes {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        margin-left: auto;
+        }
+        .r_boxes .grey_box i,
+        .r_boxes .alignment_box i,
+        .r_boxes .lists i,
+        .r_boxes .information i {
+            margin-right: 8px;
+            margin-left: 8px;
+        }
+        .body-container {
+            display: flex;
+            justify-content: flex-end; 
+            align-items: flex-start;
+            padding: 15px;
+            background-color: whitesmoke;
+            width: calc(5 * 100vw / 6);
+            overflow-y: auto;
+            height: 100%;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary">
+        <i class="fas fa-list-ul"></i>
+        <a class="navbar-brand">Onedrive</a>
+        <div class="search-container">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="모두 검색" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <div class="l_icon">
+            <i class="fas fa-gem fa-lg"></i>
+            <i class="fas fa-cog fa-lg"></i>
+            <i class="fas fa-question fa-lg"></i>
+            <i class="fas fa-user-circle fa-lg"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left_list">
+            <span class="yangjiwon">양지원</span>
+            <a class="l_list"><i class="fas fa-file-alt nav-icon"></i>내 파일</a>
+            <a class="l_list"><i class="fas fa-history nav-icon"></i>최근</a>
+            <a class="l_list"><i class="fas fa-image nav-icon"></i>사진</a>
+            <a class="l_list"><i class="fas fa-share-alt nav-icon"></i>공유됨</a>
+            <a class="l_list"><i class="fas fa-trash-alt nav-icon"></i>휴지통</a>
+        </div>
+        <div class="menu-container">
+            <div class="blue_box">
+                <i class="fas fa-plus"></i>
+                새로 만들기
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="grey_box" onclick="toggleDropdown('uploadDropdown')">
+                <i class="fas fa-upload"></i>
+                업로드
+                <i class="fas fa-chevron-down"></i>
+                <div class="dropdown-content" id="uploadDropdown">
+                    <a>파일</a>
+                    <a>폴더</a>
+                </div>
+            </div>
+            <div class="r_boxes">
+                <div class="alignment_box" onclick="toggleDropdown('sortDropdown')">
+                    <i class="fas fa-sort-amount-down"></i>
+                    정렬
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content" id="sortDropdown">
+                        <a>이름</a>
+                        <a>수정한 날짜</a>
+                        <a>파일크기</a>
+                        <a>오름차순</a>
+                        <a>내림차순</a>
+                    </div>
+                </div>
+                <div class="lists" onclick="toggleDropdown('viewDropdown')">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-content" id="viewDropdown">
+                        <a>목록</a>
+                        <a>간단한 목록</a>
+                        <a>타일</a>
+                    </div>
+                </div>
+                <div class="information">
+                    <i class="fas fa-info-circle"></i>
+                    정보
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <script>
+        function toggleDropdown(dropdownId) {
+            var dropdownContent = document.getElementById(dropdownId);
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
