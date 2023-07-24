@@ -3,7 +3,7 @@
 
 
 ## Result ! 😆
-<img src="OneDrive-result.PNG" width="600px">
+<img src="OneDrive-result.PNG">
 
 
 ## OneDrive Clone-Coding을 함으로써 얻게 된 것 😤
@@ -39,7 +39,7 @@
 ---> 자바스크립트 공부를 꾸준히 시간 날 때마다 할 예정입니다.
 
 ### 미완성한 부분
-<img src="OneDrive-img/fault-1.PNG" width="600px"> 
+<img src="OneDrive-img/fault-1.PNG"> 
 
 <br>
 
