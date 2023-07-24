@@ -6,7 +6,7 @@
 
 <br>
 
-<img src="OneDrive-result.png">
+<img src="OneDrive-result.png" width="600px">
 
 
 ## OneDrive Clone-Coding을 함으로써 얻게 된 것 😤
@@ -43,7 +43,7 @@
 
 ### 미완성한 부분
 <br>
-<img src="OneDrive-img/fault-1.png" > 
+<img src="OneDrive-img/fault-1.png" width="600px> 
 
 <br>
 
@@ -53,7 +53,7 @@
 <br>
 <br>
 
-<img src="OneDrive-img/fault-2.PNG"> <img src="OneDrive-img/fault-3.PNG" height="263px">  <br><br>
+<img src="OneDrive-img/fault-2.PNG"> <img src="OneDrive-img/fault-3.PNG" height="260px">  <br><br>
 위와 마찬가지로 자바스크립트를 사용하여 사진과 같이 드론다운 목록 등을 만들었어야 했지만, 시간 부족으로 하지 못하였습니다.
 
 ___
